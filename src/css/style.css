@@ -1,0 +1,497 @@
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+
+.row {
+  width: 100%;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+}
+
+/* POKEMONLISTCONTAINER */
+
+.pokemonListContainer {
+  min-height: 100vh;
+  float: right;
+}
+
+.utilityContainer {
+  float: left;
+}
+
+.header {
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.utils {
+  height: 8vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btn {
+  height: 7vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navBtn {
+  cursor: pointer;
+  width: 120px;
+  height: 35px;
+  border-radius: 17px;
+  font-weight: bolder;
+}
+
+.navBtn:hover {
+  cursor: pointer;
+  color: white;
+  background: black;
+  border: 1px solid white;
+  font-weight: bolder;
+}
+
+.navBtn:active {
+  color: black;
+  background: white;
+  border: 1px solid white;
+  transition: 0.3s;
+}
+
+.pokeSort {
+  width: 120px;
+  height: 30px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.pokeSort:hover {
+  cursor: pointer;
+}
+
+.viewBtn {
+  width: 120px;
+  height: 35px;
+  border-radius: 17px;
+}
+
+.viewBtn:hover {
+  cursor: pointer;
+  color: white;
+  background: black;
+  border: 1px solid white;
+  font-weight: bolder;
+}
+
+.viewBtn:active {
+  color: black;
+  background: white;
+  border: 1px solid white;
+  transition: 0.1s;
+}
+
+.pokemonGridView {
+  height: 85vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.pokemonGrid {
+  height: 125px;
+  width: calc(90% / 5);
+  border-radius: 5px;
+  color: white;
+  border: 1px solid white;
+  background: none;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.pokemonGrid:hover {
+  cursor: pointer;
+  background: rgb(68, 68, 68);
+}
+
+.pokemonGrid:active {
+  background: rgb(0, 0, 0);
+  transition: 0.1s;
+}
+
+.pokeId {
+  width: 100%;
+  text-align: start;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.pokeName {
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.pokemonListView {
+  overflow-y: auto;
+  height: 80vh;
+  text-align: center;
+}
+
+.pokemonListBtn {
+  display: flex;
+  align-items: center;
+  height: 14vh;
+  background: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 0.5rem auto;
+}
+
+.pokemonListBtn:hover {
+  cursor: pointer;
+  background: rgb(105, 101, 101);
+}
+.pokemonListBtn:active {
+  background: rgb(0, 0, 0);
+  transition: 0.1s;
+  color: white;
+}
+
+.searchInput {
+  height: 25px;
+  border: 1px solid white;
+  border-radius: 12.5px;
+  background: none;
+  color: white;
+  text-align: center;
+}
+
+/* POKEMONDETAILCONTAINER */
+
+.pokemonDetailsContainer {
+  min-height: 100vh;
+  background-color: black;
+  float: right;
+}
+
+.detailContainer {
+  height: 95vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.pokeDetailContainer {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.pokemonDetail1 {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pokemonDetail1 img {
+  width: 80%;
+}
+
+.name-type {
+  display: flex;
+  flex-direction: column;
+}
+.pokemonType {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.pokemonName {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.pokemonType span {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 0 10px;
+  margin: 0 5px;
+}
+
+.pokemonDetail2 {
+  color: white;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.statsHeader {
+  text-align: center;
+}
+
+.statsContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.skillsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.statsName {
+  text-align: start;
+  margin-left: 1rem;
+}
+.statsValue {
+  text-align: center;
+}
+
+.ability {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 2px 2px 2px 2px;
+  margin-bottom: 2px;
+  margin: 0 5px;
+  font-size: 0.8rem;
+}
+
+.addtoTeamFavoriteContainer {
+  display: flex;
+  justify-content: space-around;
+}
+.addtoFavoriteBtn {
+  width: 100px;
+  height: 25px;
+  border-radius: 12.5px;
+}
+.addtoFavoriteBtn:hover {
+  cursor: pointer;
+  color: white;
+  background: black;
+  border: 1px solid white;
+}
+.addtoFavoriteBtn:active {
+  background: white;
+  transition: 0.1s;
+  color: black;
+}
+
+.addtoTeamBtn {
+  width: 100px;
+  height: 25px;
+  border-radius: 12.5px;
+}
+
+.addtoTeamBtn:hover {
+  cursor: pointer;
+  color: white;
+  background: black;
+  border: 1px solid white;
+}
+
+.addtoTeamBtn:active {
+  background: white;
+  transition: 0.1s;
+  color: black;
+}
+.searchContainer {
+  text-align: center;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 4vh;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.searchBtn {
+  height: 30px;
+  border-radius: 15px;
+}
+.searchBtn:hover {
+  cursor: pointer;
+  color: white;
+  background: black;
+  border: 1px solid white;
+}
+
+.searchBtn:active {
+  background: white;
+  transition: 0.1s;
+  color: black;
+}
+
+.trainerContainer {
+  height: 100vh;
+  float: left;
+  background-color: rgb(50, 51, 51);
+}
+.trainerName {
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.pokemonTeamContainer {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.teamContainer {
+  border: 1px solid white;
+  border-radius: 10px;
+  display: flex;
+}
+
+.teamImg {
+  width: 60px;
+}
+
+.teamTitle {
+  height: 5vh;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  margin-top: 1rem;
+  text-align: center !important;
+}
+.favoritePokemonContainer {
+  height: 35vh;
+}
+
+.pokemonContainer {
+  display: flex;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+.pokemonContainer:hover {
+  cursor: pointer;
+  background: rgb(0, 0, 0);
+}
+
+.faveListContainer {
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+.faveListContainer > div > div > img {
+  height: 50px;
+}
+
+.favName {
+  text-align: start;
+  font-weight: bolder;
+}
+
+.saveTeamContainer {
+  height: 10vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.saveTeamBtn {
+  background: none;
+  color: white;
+  border: 1px solid white;
+  padding: 15px 5px;
+  border-radius: 5px;
+}
+.saveTeamBtn:hover {
+  cursor: pointer;
+  background: white;
+  color: black;
+}
+
+.saveTeamBtn:active {
+  background: rgb(0, 0, 0);
+  color: white;
+  transition: 0.1s;
+}
+.sprites {
+  height: 60px;
+  width: 60px;
+}
+
+.displayTeamContainer {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: auto;
+}
+
+.teamImg {
+  border-bottom: 1px solid white;
+}
